@@ -9769,6 +9769,53 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="kanflo">
+<packages>
+<package name="1X02">
+<pad name="1" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-2.6162" y="1.7288" size="0.889" layer="25" ratio="15">DELETE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="LDR">
+<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.889" x2="2.54" y2="0.889" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.889" width="0.254" layer="94"/>
+<text x="-3.91" y="-3.5014" size="1.778" layer="95">&gt;NAME</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="3.6" y1="3.7" x2="1.7" y2="1.7" width="0.254" layer="94"/>
+<wire x1="1.7" y1="1.7" x2="2.6" y2="1.8" width="0.254" layer="94"/>
+<wire x1="2.6" y1="1.8" x2="1.7" y2="1.7" width="0.254" layer="94"/>
+<wire x1="1.7" y1="1.7" x2="1.7" y2="2.4" width="0.254" layer="94"/>
+<wire x1="2.4" y1="4.6" x2="0.5" y2="2.6" width="0.254" layer="94"/>
+<wire x1="0.5" y1="2.6" x2="1.4" y2="2.7" width="0.254" layer="94"/>
+<wire x1="1.4" y1="2.7" x2="0.5" y2="2.6" width="0.254" layer="94"/>
+<wire x1="0.5" y1="2.6" x2="0.5" y2="3.3" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LDR" prefix="J">
+<description>Through hole light dependent resistor.</description>
+<gates>
+<gate name="G$1" symbol="LDR" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="-TH" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9807,6 +9854,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD80C" package3d_urn="urn:adsk.eagle:package:43405/2" value="1N4148"/>
 <part name="CLOSE_S" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="3.5MM" package3d_urn="urn:adsk.eagle:package:38050/1"/>
 <part name="OPEN_S" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="3.5MM" package3d_urn="urn:adsk.eagle:package:38050/1"/>
+<part name="J1" library="kanflo" deviceset="LDR" device="-TH"/>
+<part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k"/>
 </parts>
 <sheets>
 <sheet>
@@ -9950,6 +9999,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="VALUE" x="-30.48" y="-7.366" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-30.48" y="3.048" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="J1" gate="G$1" x="-93.98" y="0" smashed="yes">
+<attribute name="NAME" x="-97.89" y="-3.5014" size="1.778" layer="95"/>
+</instance>
+<instance part="R1" gate="G$1" x="-81.28" y="0" smashed="yes">
+<attribute name="NAME" x="-85.09" y="1.4986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-85.09" y="-3.302" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10032,6 +10088,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="OPEN_S" gate="G$1" pin="1"/>
 <wire x1="-20.32" y1="-2.54" x2="-15.24" y2="-2.54" width="0.1524" layer="91"/>
 <label x="-15.24" y="-2.54" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="-76.2" y1="0" x2="-76.2" y2="10.16" width="0.1524" layer="91"/>
+<label x="-76.2" y="10.16" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GPIO0" class="0">
@@ -10240,12 +10301,26 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="73.66" y1="2.54" x2="83.82" y2="2.54" width="0.1524" layer="91"/>
 <label x="83.82" y="2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="-99.06" y1="0" x2="-101.6" y2="0" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="0" x2="-101.6" y2="5.08" width="0.1524" layer="91"/>
+<label x="-101.6" y="5.08" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
 </net>
 <net name="A0" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="-5.08" y1="58.42" x2="-5.08" y2="60.96" width="0.1524" layer="91"/>
 <label x="-5.08" y="60.96" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="-86.36" y1="0" x2="-88.9" y2="0" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="0" x2="-86.36" y2="7.62" width="0.1524" layer="91"/>
+<junction x="-86.36" y="0"/>
+<label x="-86.36" y="7.62" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$17" class="0">
