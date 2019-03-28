@@ -9844,11 +9844,11 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="OPEN_R" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="REED" device="" package3d_urn="urn:adsk.eagle:package:24297/1"/>
 <part name="STOP_R" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="REED" device="" package3d_urn="urn:adsk.eagle:package:24297/1"/>
 <part name="CLOSE_R" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="REED" device="" package3d_urn="urn:adsk.eagle:package:24297/1"/>
-<part name="X1" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="POWER" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
 <part name="U$1" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
-<part name="X2" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
-<part name="X3" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
-<part name="X4" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="OPEN" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="STOP" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="CLOSE" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD80C" package3d_urn="urn:adsk.eagle:package:43405/2" value="1N4148"/>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD80C" package3d_urn="urn:adsk.eagle:package:43405/2" value="1N4148"/>
 <part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD80C" package3d_urn="urn:adsk.eagle:package:43405/2" value="1N4148"/>
@@ -9947,10 +9947,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="VALUE" x="92.71" y="61.341" size="1.778" layer="96"/>
 <attribute name="PART" x="92.71" y="63.5" size="1.778" layer="95"/>
 </instance>
-<instance part="X1" gate="-1" x="27.94" y="-7.62" smashed="yes">
+<instance part="POWER" gate="-1" x="27.94" y="-7.62" smashed="yes">
 <attribute name="NAME" x="27.94" y="-6.731" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-2" x="27.94" y="2.54" smashed="yes">
+<instance part="POWER" gate="-2" x="27.94" y="2.54" smashed="yes">
 <attribute name="VALUE" x="25.4" y="-1.143" size="1.778" layer="96"/>
 <attribute name="NAME" x="27.94" y="3.429" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -9958,24 +9958,24 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="NAME" x="43.18" y="12.7" size="1.778" layer="95"/>
 <attribute name="VALUE" x="43.18" y="10.16" size="1.778" layer="96"/>
 </instance>
-<instance part="X2" gate="-1" x="43.18" y="137.16" smashed="yes" rot="R180">
+<instance part="OPEN" gate="-1" x="43.18" y="137.16" smashed="yes" rot="R180">
 <attribute name="NAME" x="43.18" y="136.271" size="1.778" layer="95"/>
 </instance>
-<instance part="X2" gate="-2" x="43.18" y="127" smashed="yes" rot="R180">
+<instance part="OPEN" gate="-2" x="43.18" y="127" smashed="yes" rot="R180">
 <attribute name="VALUE" x="45.72" y="130.683" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="43.18" y="126.111" size="1.778" layer="95"/>
 </instance>
-<instance part="X3" gate="-1" x="43.18" y="111.76" smashed="yes" rot="R180">
+<instance part="STOP" gate="-1" x="43.18" y="111.76" smashed="yes" rot="R180">
 <attribute name="NAME" x="43.18" y="110.871" size="1.778" layer="95"/>
 </instance>
-<instance part="X3" gate="-2" x="43.18" y="101.6" smashed="yes" rot="R180">
+<instance part="STOP" gate="-2" x="43.18" y="101.6" smashed="yes" rot="R180">
 <attribute name="VALUE" x="45.72" y="105.283" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="43.18" y="100.711" size="1.778" layer="95"/>
 </instance>
-<instance part="X4" gate="-1" x="45.72" y="93.98" smashed="yes" rot="R180">
+<instance part="CLOSE" gate="-1" x="45.72" y="93.98" smashed="yes" rot="R180">
 <attribute name="NAME" x="45.72" y="93.091" size="1.778" layer="95"/>
 </instance>
-<instance part="X4" gate="-2" x="45.72" y="83.82" smashed="yes" rot="R180">
+<instance part="CLOSE" gate="-2" x="45.72" y="83.82" smashed="yes" rot="R180">
 <attribute name="VALUE" x="48.26" y="87.503" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="45.72" y="82.931" size="1.778" layer="95"/>
 </instance>
@@ -10044,7 +10044,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="IN-"/>
-<pinref part="X1" gate="-1" pin="KL"/>
+<pinref part="POWER" gate="-1" pin="KL"/>
 <wire x1="33.02" y1="-7.62" x2="38.1" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -10326,27 +10326,27 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <net name="N$17" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="IN+"/>
-<pinref part="X1" gate="-2" pin="KL"/>
+<pinref part="POWER" gate="-2" pin="KL"/>
 <wire x1="33.02" y1="2.54" x2="38.1" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND1" class="0">
 <segment>
-<pinref part="X2" gate="-1" pin="KL"/>
+<pinref part="OPEN" gate="-1" pin="KL"/>
 <wire x1="38.1" y1="137.16" x2="22.86" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="OPEN_R" gate="2" pin="S"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="X2" gate="-2" pin="KL"/>
+<pinref part="OPEN" gate="-2" pin="KL"/>
 <pinref part="OPEN_R" gate="2" pin="P"/>
 <wire x1="22.86" y1="127" x2="38.1" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND2" class="0">
 <segment>
-<pinref part="X3" gate="-1" pin="KL"/>
+<pinref part="STOP" gate="-1" pin="KL"/>
 <wire x1="38.1" y1="111.76" x2="33.02" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="STOP_R" gate="2" pin="S"/>
 <wire x1="22.86" y1="114.3" x2="33.02" y2="114.3" width="0.1524" layer="91"/>
@@ -10355,7 +10355,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="X3" gate="-2" pin="KL"/>
+<pinref part="STOP" gate="-2" pin="KL"/>
 <wire x1="38.1" y1="101.6" x2="33.02" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="STOP_R" gate="2" pin="P"/>
 <wire x1="22.86" y1="104.14" x2="33.02" y2="104.14" width="0.1524" layer="91"/>
@@ -10364,14 +10364,14 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 </net>
 <net name="GND3" class="0">
 <segment>
-<pinref part="X4" gate="-1" pin="KL"/>
+<pinref part="CLOSE" gate="-1" pin="KL"/>
 <pinref part="CLOSE_R" gate="2" pin="S"/>
 <wire x1="22.86" y1="93.98" x2="40.64" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="X4" gate="-2" pin="KL"/>
+<pinref part="CLOSE" gate="-2" pin="KL"/>
 <pinref part="CLOSE_R" gate="2" pin="P"/>
 <wire x1="22.86" y1="83.82" x2="40.64" y2="83.82" width="0.1524" layer="91"/>
 </segment>

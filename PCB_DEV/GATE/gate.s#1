@@ -9854,7 +9854,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD80C" package3d_urn="urn:adsk.eagle:package:43405/2" value="1N4148"/>
 <part name="CLOSE_S" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="3.5MM" package3d_urn="urn:adsk.eagle:package:38050/1"/>
 <part name="OPEN_S" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="3.5MM" package3d_urn="urn:adsk.eagle:package:38050/1"/>
-<part name="J1" library="kanflo" deviceset="LDR" device="-TH"/>
+<part name="LDR" library="kanflo" deviceset="LDR" device="-TH"/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k"/>
 </parts>
 <sheets>
@@ -9999,7 +9999,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="VALUE" x="-30.48" y="-7.366" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-30.48" y="3.048" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J1" gate="G$1" x="-93.98" y="0" smashed="yes">
+<instance part="LDR" gate="G$1" x="-93.98" y="0" smashed="yes">
 <attribute name="NAME" x="-97.89" y="-3.5014" size="1.778" layer="95"/>
 </instance>
 <instance part="R1" gate="G$1" x="-81.28" y="0" smashed="yes">
@@ -10302,7 +10302,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="83.82" y="2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
+<pinref part="LDR" gate="G$1" pin="1"/>
 <wire x1="-99.06" y1="0" x2="-101.6" y2="0" width="0.1524" layer="91"/>
 <wire x1="-101.6" y1="0" x2="-101.6" y2="5.08" width="0.1524" layer="91"/>
 <label x="-101.6" y="5.08" size="1.778" layer="95" rot="R90" xref="yes"/>
@@ -10315,7 +10315,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="-5.08" y="60.96" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
+<pinref part="LDR" gate="G$1" pin="2"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-86.36" y1="0" x2="-88.9" y2="0" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="0" x2="-86.36" y2="7.62" width="0.1524" layer="91"/>
