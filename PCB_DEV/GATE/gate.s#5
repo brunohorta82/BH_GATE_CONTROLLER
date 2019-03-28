@@ -10309,19 +10309,17 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="152.4" y1="-5.08" x2="172.72" y2="-5.08" width="0.1524" layer="91"/>
 <label x="172.72" y="-5.08" size="1.778" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="OUT+"/>
+<wire x1="73.66" y1="2.54" x2="83.82" y2="2.54" width="0.1524" layer="91"/>
+<label x="83.82" y="2.54" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="A0" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="-5.08" y1="58.42" x2="-5.08" y2="60.96" width="0.1524" layer="91"/>
 <label x="-5.08" y="60.96" size="1.778" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="5V" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="OUT+"/>
-<wire x1="73.66" y1="2.54" x2="83.82" y2="2.54" width="0.1524" layer="91"/>
-<label x="83.82" y="2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$17" class="0">

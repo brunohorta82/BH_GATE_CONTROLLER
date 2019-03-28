@@ -3,7 +3,7 @@
 <eagle version="9.3.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.000123031496" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.003125" altunitdist="mic" altunit="mic"/>
@@ -1610,6 +1610,15 @@ Based on the following sources:
 </package3d>
 </packages3d>
 </library>
+<library name="kanflo">
+<packages>
+<package name="1X02">
+<pad name="1" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-2.6162" y="1.7288" size="0.889" layer="25" ratio="15">DELETE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1871,11 +1880,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="14.739509375" y="42.23363125" size="1.4224" layer="25" rot="R90"/>
 <attribute name="VALUE" x="23.028190625" y="42.96623125" size="1.4224" layer="27" rot="R90"/>
 </element>
-<element name="UART" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="SCREWTERMINAL-3.5MM-4" package3d_urn="urn:adsk.eagle:package:38090/1" value="" x="40.64" y="31.75" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.1" y="30.607" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
-<attribute name="PROD_ID" value="2xCONN-08399" x="91.44" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SF_ID" value="2xPRT-08084" x="40.64" y="31.75" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="43.942" y="30.099" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
+<element name="UART" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="SCREWTERMINAL-3.5MM-4" package3d_urn="urn:adsk.eagle:package:38090/1" value="" x="40.750565625" y="42.903403125" smashed="yes" rot="R270">
+<attribute name="NAME" x="43.290565625" y="44.046403125" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="PROD_ID" value="2xCONN-08399" x="-10.049434375" y="2.263403125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SF_ID" value="2xPRT-08084" x="40.750565625" y="42.903403125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="37.448565625" y="44.554403125" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="X1" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" package="W237-102" package3d_urn="urn:adsk.eagle:package:10688/1" value="" x="40.64" y="50.8" smashed="yes" rot="R270">
 <attribute name="MF" value="" x="81.28" y="62.23" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1935,6 +1944,11 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CONN-08399" x="40.65206875" y="4.05790625" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="39.38206875" y="2.78790625" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
+<element name="J1" library="kanflo" package="1X02" value="LDR-TH" x="3.05031875" y="-3.0126125" smashed="yes"/>
+<element name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="1.42451875" y="-6.5178125" smashed="yes">
+<attribute name="NAME" x="0.78951875" y="-5.8828125" size="1.27" layer="25"/>
+<attribute name="VALUE" x="0.78951875" y="-8.4228125" size="1.27" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1955,12 +1969,13 @@ design rules under a new name.</description>
 <contactref element="CLOSE_R" pad="3"/>
 <contactref element="CLOSE_S" pad="1"/>
 <contactref element="OPEN_S" pad="1"/>
+<contactref element="R1" pad="2"/>
 <wire x1="39.37" y1="53.3" x2="42.672" y2="75.946" width="0" layer="19" extent="1-1"/>
 <wire x1="31.501490625" y1="49.821865625" x2="39.37" y2="53.3" width="0" layer="19" extent="1-1"/>
 <wire x1="31.483034375" y1="43.281615625" x2="31.501490625" y2="49.821865625" width="0" layer="19" extent="1-1"/>
 <wire x1="25.225303125" y1="53.443709375" x2="31.501490625" y2="49.821865625" width="0" layer="19" extent="1-1"/>
 <wire x1="22.40989375" y1="53.312" x2="25.225303125" y2="53.443709375" width="0" layer="19" extent="1-1"/>
-<wire x1="40.64" y1="31.75" x2="31.483034375" y2="43.281615625" width="0" layer="19" extent="1-1"/>
+<wire x1="40.750565625" y1="42.903403125" x2="31.483034375" y2="43.281615625" width="0" layer="19" extent="1-1"/>
 <wire x1="20.32" y1="27.94" x2="31.483034375" y2="43.281615625" width="0" layer="19" extent="1-1"/>
 <wire x1="20.91776875" y1="23.904884375" x2="20.32" y2="27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="20.32" y1="16.51" x2="20.91776875" y2="23.904884375" width="0" layer="19" extent="1-1"/>
@@ -1968,8 +1983,9 @@ design rules under a new name.</description>
 <wire x1="21.09025625" y1="9.1146125" x2="21.055675" y2="12.64683125" width="0" layer="19" extent="1-1"/>
 <wire x1="20.32" y1="5.08" x2="21.09025625" y2="9.1146125" width="0" layer="19" extent="1-1"/>
 <wire x1="5.6603" y1="33.598865625" x2="20.32" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="40.565359375" y1="13.889575" x2="20.32" y2="5.08" width="0" layer="19" extent="1-1"/>
+<wire x1="40.565359375" y1="13.889575" x2="21.055675" y2="12.64683125" width="0" layer="19" extent="1-1"/>
 <wire x1="40.65206875" y1="4.05790625" x2="40.565359375" y2="13.889575" width="0" layer="19" extent="1-1"/>
+<wire x1="2.27451875" y1="-6.5178125" x2="20.32" y2="5.08" width="0" layer="19" extent="1-1"/>
 <wire x1="3.048" y1="75.946" x2="22.40989375" y2="53.312" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO0">
@@ -1994,7 +2010,7 @@ design rules under a new name.</description>
 <signal name="RX">
 <contactref element="U2" pad="RXD0"/>
 <contactref element="UART" pad="3"/>
-<wire x1="10.40989375" y1="53.312" x2="40.64" y2="38.75" width="0" layer="19" extent="1-1"/>
+<wire x1="10.40989375" y1="53.312" x2="40.750565625" y2="35.903403125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO04">
 <contactref element="U2" pad="GPIO4"/>
@@ -2043,7 +2059,7 @@ design rules under a new name.</description>
 <signal name="TX">
 <contactref element="U2" pad="TXD0"/>
 <contactref element="UART" pad="2"/>
-<wire x1="8.40989375" y1="53.312" x2="40.64" y2="35.25" width="0" layer="19" extent="1-1"/>
+<wire x1="8.40989375" y1="53.312" x2="40.750565625" y2="39.403403125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO15">
 <contactref element="R11" pad="1"/>
@@ -2057,14 +2073,20 @@ design rules under a new name.</description>
 <contactref element="R9" pad="2"/>
 <contactref element="UART" pad="4"/>
 <contactref element="U$1" pad="OUT+"/>
-<wire x1="31.483428125" y1="35.276696875" x2="40.64" y2="42.25" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="1"/>
+<wire x1="31.483428125" y1="35.276696875" x2="40.750565625" y2="32.403403125" width="0" layer="19" extent="1-1"/>
 <wire x1="22.40989375" y1="37.928" x2="31.483428125" y2="35.276696875" width="0" layer="19" extent="1-1"/>
 <wire x1="22.162053125" y1="33.513825" x2="22.40989375" y2="37.928" width="0" layer="19" extent="1-1"/>
 <wire x1="12.847628125" y1="33.79066875" x2="22.162053125" y2="33.513825" width="0" layer="19" extent="1-1"/>
 <wire x1="3.048" y1="58.674" x2="12.847628125" y2="33.79066875" width="0" layer="19" extent="1-1"/>
+<wire x1="1.78031875" y1="-3.0126125" x2="12.847628125" y2="33.79066875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="A0">
 <contactref element="R3" pad="2"/>
+<contactref element="J1" pad="2"/>
+<contactref element="R1" pad="1"/>
+<wire x1="4.32031875" y1="-3.0126125" x2="9.1664375" y2="33.77481875" width="0" layer="19" extent="1-1"/>
+<wire x1="0.57451875" y1="-6.5178125" x2="4.32031875" y2="-3.0126125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="U$1" pad="IN+"/>
