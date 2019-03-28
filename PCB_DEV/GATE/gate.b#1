@@ -3,7 +3,7 @@
 <eagle version="9.2.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.000123031496" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.003125" altunitdist="mic" altunit="mic"/>
@@ -1574,83 +1574,13 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </package>
 </packages>
 </library>
-<library name="semicon-smd-ipc" urn="urn:adsk.eagle:library:353">
-<description>&lt;b&gt;IPC Standard SMD Semiconductors&lt;/b&gt;&lt;p&gt;
-A few devices defined according to the IPC standard.&lt;p&gt;
-Based on:&lt;p&gt;
-IPC-SM-782&lt;br&gt;
-IRevision A, August 1993&lt;br&gt;
-Includes Amendment 1, October 1996&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SOT23" urn="urn:adsk.eagle:footprint:26292/1" library_version="1">
-<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SOT23" urn="urn:adsk.eagle:package:26310/1" type="box" library_version="1">
-<description>SOT-23</description>
-<packageinstances>
-<packageinstance name="SOT23"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
-<library name="diode" urn="urn:adsk.eagle:library:210">
-<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
-Based on the following sources:
-&lt;ul&gt;
-&lt;li&gt;Motorola : www.onsemi.com
-&lt;li&gt;Fairchild : www.fairchildsemi.com
-&lt;li&gt;Philips : www.semiconductors.com
-&lt;li&gt;Vishay : www.vishay.de
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SOD80C" urn="urn:adsk.eagle:footprint:43180/1" library_version="2">
-<description>&lt;B&gt;DIODE&lt;/B&gt;</description>
-<wire x1="1.3208" y1="0.7874" x2="-1.3208" y2="0.7874" width="0.1524" layer="51"/>
-<wire x1="1.3208" y1="-0.7874" x2="-1.3208" y2="-0.7874" width="0.1524" layer="51"/>
-<wire x1="0.627" y1="0.6" x2="-0.373" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.373" y1="0" x2="0.627" y2="-0.6" width="0.2032" layer="21"/>
-<wire x1="0.627" y1="-0.6" x2="0.627" y2="0.6" width="0.2032" layer="21"/>
-<smd name="C" x="-1.7" y="0" dx="1.4" dy="1.8" layer="1"/>
-<smd name="A" x="1.7" y="0" dx="1.4" dy="1.8" layer="1"/>
-<text x="-1.524" y="1.143" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.524" y="-2.413" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.8542" y1="-0.8636" x2="-1.2954" y2="0.8636" layer="51"/>
-<rectangle x1="1.2954" y1="-0.8636" x2="1.8542" y2="0.8636" layer="51"/>
-<rectangle x1="-0.8636" y1="-0.7874" x2="-0.254" y2="0.7874" layer="21"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="SOD80C" urn="urn:adsk.eagle:package:43405/2" type="model" library_version="2">
-<description>DIODE</description>
-<packageinstances>
-<packageinstance name="SOD80C"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
 </libraries>
 <attributes>
 </attributes>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.6096" drill="0">
 </class>
 <class number="1" name="220V" width="1.27" drill="0">
 <clearance class="1" value="2"/>
@@ -1957,54 +1887,6 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="70K9898" x="-10.10791875" y="-6.368453125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-2.48791875" y="-11.408453125" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="J3Y" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" package="SOT23" package3d_urn="urn:adsk.eagle:package:26310/1" value="S8050 " x="-0.525359375" y="-3.737453125">
-<attribute name="NAME" x="-2.430359375" y="-1.832453125" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-2.430359375" y="-6.912453125" size="1.27" layer="27"/>
-</element>
-<element name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="-1.439959375" y="-15.777053125">
-<attribute name="NAME" x="-2.074959375" y="-9.249253125" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-2.074959375" y="-11.789253125" size="1.27" layer="27"/>
-</element>
-<element name="JY3" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" package="SOT23" package3d_urn="urn:adsk.eagle:package:26310/1" value="S8050 " x="6.1810125" y="-3.737453125">
-<attribute name="NAME" x="-2.430359375" y="-14.126053125" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-2.430359375" y="-19.206053125" size="1.27" layer="27"/>
-</element>
-<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="2.783384375" y="-15.777053125">
-<attribute name="NAME" x="-2.074959375" y="-21.542853125" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-2.074959375" y="-24.082853125" size="1.27" layer="27"/>
-</element>
-<element name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="7.006728125" y="-15.777053125">
-<attribute name="NAME" x="-2.074959375" y="-26.419653125" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-2.074959375" y="-28.959653125" size="1.27" layer="27"/>
-</element>
-<element name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="-1.439959375" y="-20.653853125">
-<attribute name="NAME" x="-2.074959375" y="-31.296453125" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-2.074959375" y="-33.836453125" size="1.27" layer="27"/>
-</element>
-<element name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" package="SOD80C" package3d_urn="urn:adsk.eagle:package:43405/2" value="1N4148" x="-0.436759375" y="-10.392253125">
-<attribute name="NAME" x="-1.960759375" y="-36.173253125" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-1.960759375" y="-39.729253125" size="1.27" layer="27"/>
-</element>
-<element name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" package="SOD80C" package3d_urn="urn:adsk.eagle:package:43405/2" value="1N4148" x="7.346171875" y="-10.392253125">
-<attribute name="NAME" x="-1.960759375" y="-42.066053125" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-1.960759375" y="-45.622053125" size="1.27" layer="27"/>
-</element>
-<element name="JY1" library="semicon-smd-ipc" library_urn="urn:adsk.eagle:library:353" package="SOT23" package3d_urn="urn:adsk.eagle:package:26310/1" value="S8050 " x="-0.525359375" y="-49.863853125">
-<attribute name="NAME" x="-2.430359375" y="-47.958853125" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-2.430359375" y="-53.038853125" size="1.27" layer="27"/>
-</element>
-<element name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="-1.439959375" y="-61.903453125">
-<attribute name="NAME" x="-2.074959375" y="-55.375653125" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-2.074959375" y="-57.915653125" size="1.27" layer="27"/>
-</element>
-<element name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10k" x="3.185046875" y="-61.903453125">
-<attribute name="NAME" x="-2.074959375" y="-60.252453125" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-2.074959375" y="-62.792453125" size="1.27" layer="27"/>
-</element>
-<element name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" package="SOD80C" package3d_urn="urn:adsk.eagle:package:43405/2" value="1N4148" x="-0.436759375" y="-56.518653125">
-<attribute name="NAME" x="-1.960759375" y="-65.129253125" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-1.960759375" y="-68.685253125" size="1.27" layer="27"/>
-</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2018,12 +1900,6 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="IN-"/>
 <contactref element="X1" pad="1"/>
 <contactref element="U$1" pad="OUT-"/>
-<contactref element="J3Y" pad="2"/>
-<contactref element="R6" pad="1"/>
-<contactref element="JY3" pad="2"/>
-<contactref element="R5" pad="1"/>
-<contactref element="JY1" pad="2"/>
-<contactref element="R13" pad="1"/>
 <wire x1="39.37" y1="53.3" x2="42.672" y2="75.946" width="0" layer="19" extent="1-1"/>
 <wire x1="31.501490625" y1="49.821865625" x2="39.37" y2="53.3" width="0" layer="19" extent="1-1"/>
 <wire x1="31.483034375" y1="43.281615625" x2="31.501490625" y2="49.821865625" width="0" layer="19" extent="1-1"/>
@@ -2033,12 +1909,6 @@ design rules under a new name.</description>
 <wire x1="40.64" y1="6.35" x2="40.64" y2="31.75" width="0" layer="19" extent="1-1"/>
 <wire x1="5.6603" y1="33.598865625" x2="22.40989375" y2="53.312" width="0" layer="19" extent="1-1"/>
 <wire x1="3.048" y1="75.946" x2="22.40989375" y2="53.312" width="0" layer="19" extent="1-1"/>
-<wire x1="7.1310125" y1="-4.837453125" x2="40.64" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="0.424640625" y1="-4.837453125" x2="7.1310125" y2="-4.837453125" width="0" layer="19" extent="1-1"/>
-<wire x1="6.156728125" y1="-15.777053125" x2="7.1310125" y2="-4.837453125" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.289959375" y1="-20.653853125" x2="6.156728125" y2="-15.777053125" width="0" layer="19" extent="1-1"/>
-<wire x1="0.424640625" y1="-50.963853125" x2="-2.289959375" y2="-20.653853125" width="0" layer="19" extent="1-1"/>
-<wire x1="2.335046875" y1="-61.903453125" x2="0.424640625" y2="-50.963853125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO0">
 <contactref element="U2" pad="GPIO0"/>
@@ -2066,13 +1936,9 @@ design rules under a new name.</description>
 </signal>
 <signal name="GPIO04">
 <contactref element="U2" pad="GPIO4"/>
-<contactref element="R1" pad="1"/>
-<wire x1="-2.289959375" y1="-15.777053125" x2="14.40989375" y2="53.312" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO05">
 <contactref element="U2" pad="GPIO5"/>
-<contactref element="R2" pad="1"/>
-<wire x1="1.933384375" y1="-15.777053125" x2="12.40989375" y2="53.312" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO02">
 <contactref element="U2" pad="GPIO2"/>
@@ -2089,8 +1955,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="GPIO14">
 <contactref element="U2" pad="GPIO14"/>
-<contactref element="R12" pad="1"/>
-<wire x1="16.40989375" y1="37.928" x2="-2.289959375" y2="-61.903453125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO16">
 <contactref element="U2" pad="GPIO16"/>
@@ -2167,61 +2031,6 @@ design rules under a new name.</description>
 <contactref element="X4" pad="2"/>
 <contactref element="K3" pad="1"/>
 <wire x1="5.13208125" y1="7.561546875" x2="15.24" y2="5.08" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$4">
-<contactref element="J3Y" pad="3"/>
-<contactref element="D1" pad="A"/>
-<contactref element="K1" pad="3"/>
-<wire x1="-0.525359375" y1="-2.637453125" x2="20.32" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="1.263240625" y1="-10.392253125" x2="-0.525359375" y2="-2.637453125" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$9">
-<contactref element="JY3" pad="3"/>
-<contactref element="D2" pad="A"/>
-<contactref element="K2" pad="3"/>
-<wire x1="6.1810125" y1="-2.637453125" x2="20.32" y2="16.51" width="0" layer="19" extent="1-1"/>
-<wire x1="9.046171875" y1="-10.392253125" x2="6.1810125" y2="-2.637453125" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$13">
-<contactref element="JY3" pad="1"/>
-<contactref element="R2" pad="2"/>
-<contactref element="R5" pad="2"/>
-<wire x1="7.856728125" y1="-15.777053125" x2="3.633384375" y2="-15.777053125" width="0" layer="19" extent="1-1"/>
-<wire x1="5.2310125" y1="-4.837453125" x2="3.633384375" y2="-15.777053125" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$7">
-<contactref element="J3Y" pad="1"/>
-<contactref element="R1" pad="2"/>
-<contactref element="R6" pad="2"/>
-<wire x1="-0.589959375" y1="-15.777053125" x2="-0.589959375" y2="-20.653853125" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.475359375" y1="-4.837453125" x2="-0.589959375" y2="-15.777053125" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$5">
-<contactref element="JY1" pad="3"/>
-<contactref element="D3" pad="A"/>
-<contactref element="K3" pad="3"/>
-<wire x1="-0.525359375" y1="-48.763853125" x2="1.263240625" y2="-56.518653125" width="0" layer="19" extent="1-1"/>
-<wire x1="20.32" y1="5.08" x2="-0.525359375" y2="-48.763853125" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$6">
-<contactref element="JY1" pad="1"/>
-<contactref element="R12" pad="2"/>
-<contactref element="R13" pad="2"/>
-<wire x1="4.035046875" y1="-61.903453125" x2="-0.589959375" y2="-61.903453125" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.475359375" y1="-50.963853125" x2="-0.589959375" y2="-61.903453125" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="VCC">
-<contactref element="D3" pad="C"/>
-<contactref element="D1" pad="C"/>
-<contactref element="D2" pad="C"/>
-<contactref element="K1" pad="5"/>
-<contactref element="K2" pad="5"/>
-<contactref element="K3" pad="5"/>
-<wire x1="-2.136759375" y1="-10.392253125" x2="-2.136759375" y2="-56.518653125" width="0" layer="19" extent="1-1"/>
-<wire x1="5.646171875" y1="-10.392253125" x2="-2.136759375" y2="-10.392253125" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="5.08" x2="5.646171875" y2="-10.392253125" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="16.51" x2="25.4" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="27.94" x2="25.4" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
