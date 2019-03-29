@@ -9999,8 +9999,8 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <attribute name="VALUE" x="-30.48" y="-7.366" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-30.48" y="3.048" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="LDR" gate="G$1" x="-93.98" y="0" smashed="yes">
-<attribute name="NAME" x="-97.89" y="-3.5014" size="1.778" layer="95"/>
+<instance part="LDR" gate="G$1" x="-93.98" y="0" smashed="yes" rot="R180">
+<attribute name="NAME" x="-90.07" y="3.5014" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="R1" gate="G$1" x="-81.28" y="0" smashed="yes">
 <attribute name="NAME" x="-85.09" y="1.4986" size="1.778" layer="95"/>
@@ -10302,10 +10302,10 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="83.82" y="2.54" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LDR" gate="G$1" pin="1"/>
-<wire x1="-99.06" y1="0" x2="-101.6" y2="0" width="0.1524" layer="91"/>
 <wire x1="-101.6" y1="0" x2="-101.6" y2="5.08" width="0.1524" layer="91"/>
 <label x="-101.6" y="5.08" size="1.778" layer="95" rot="R90" xref="yes"/>
+<pinref part="LDR" gate="G$1" pin="2"/>
+<wire x1="-99.06" y1="0" x2="-101.6" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -10315,12 +10315,12 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="-5.08" y="60.96" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="LDR" gate="G$1" pin="2"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-86.36" y1="0" x2="-88.9" y2="0" width="0.1524" layer="91"/>
 <wire x1="-86.36" y1="0" x2="-86.36" y2="7.62" width="0.1524" layer="91"/>
-<junction x="-86.36" y="0"/>
 <label x="-86.36" y="7.62" size="1.778" layer="95" xref="yes"/>
+<pinref part="LDR" gate="G$1" pin="1"/>
+<wire x1="-88.9" y1="0" x2="-86.36" y2="0" width="0.1524" layer="91"/>
+<junction x="-86.36" y="0"/>
 </segment>
 </net>
 <net name="N$17" class="0">
