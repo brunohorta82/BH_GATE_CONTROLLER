@@ -14,7 +14,7 @@ Se gostaste do projeto podes fazer o teu donativo :).
 [![Donativo](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/bhonofre)
 
 
-![pcb](https://github.com/brunohorta82/BH_GATE_CONTROLLER/master/images/pcb.png)
-![sch](https://github.com/brunohorta82/BH_GATE_CONTROLLER/master/images/sch.png)
-![brd](https://github.com/brunohorta82/BH_GATE_CONTROLLER/master/images/brd.png)
-![asb](https://github.com/brunohorta82/BH_GATE_CONTROLLER/master/images/gate.jpg)
+![pcb](https://github.com/brunohorta82/BH_GATE_CONTROLLER/blob/master/images/pcb.png)
+![sch](https://github.com/brunohorta82/BH_GATE_CONTROLLER/blob/master/images/sch.png)
+![brd](https://github.com/brunohorta82/BH_GATE_CONTROLLER/blob/master/images/brd.png)
+![asb](https://github.com/brunohorta82/BH_GATE_CONTROLLER/blob/master/images/gate.jpg)
