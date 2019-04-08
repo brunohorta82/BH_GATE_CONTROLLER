@@ -9882,7 +9882,7 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="17.78" y1="20.32" x2="17.78" y2="-20.32" width="1.016" layer="94" style="shortdash"/>
 <wire x1="17.78" y1="-20.32" x2="208.28" y2="-20.32" width="1.016" layer="94" style="shortdash"/>
 <wire x1="208.28" y1="-20.32" x2="208.28" y2="20.32" width="1.016" layer="94" style="shortdash"/>
-<text x="-104.14" y="15.24" size="3.81" layer="95">SENSORS</text>
+<text x="-104.14" y="15.24" size="3.81" layer="95">LEGEND</text>
 <wire x1="-106.68" y1="20.32" x2="-106.68" y2="-20.32" width="1.016" layer="94" style="shortdash"/>
 <wire x1="-106.68" y1="-20.32" x2="17.78" y2="-20.32" width="1.016" layer="94" style="shortdash"/>
 <text x="137.16" y="12.7" size="3.81" layer="95">UART</text>
